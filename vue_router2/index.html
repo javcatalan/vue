@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Demo App</h1>
+    <div id="app">
+      <router-link to="/a">A</router-link>
+      <router-link to="/b">B</router-link>
+
+      <router-view></router-view>
+    </div>
+    <script src="components/a.js"></script>
+    <script src="components/b.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

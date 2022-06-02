@@ -1,0 +1,98 @@
+/* Custom CSS go here*/
+.switch input{
+        display:none;
+}
+.switch {
+    position: relative;
+    display:inline-block;
+    width: 80px;
+    height: 30px;
+    border-radius: 100px;
+    border: 2px solid #00eda0;
+}
+.circle {
+        display: flex;
+        align-items: center;
+        width: 80px;
+        height: 30px;
+        border-radius: 100px;
+        background-color: black;
+}
+span {
+            font-size: 2.5 rem;
+            color: #9d9d9d;
+            padding-left: 40px;
+        }
+
+span::before {
+            position: relative;
+            content: "";
+            height: 30px;
+            width: 80px;
+            left: 1px;
+            top: 1px;
+            border-radius: 100px;
+            background-color: white;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+        }
+
+span:hover {
+            background-color: lighten(black,20);
+}
+
+span > span {
+                color: white;
+}
+
+
+.circle-on {
+        background-color: #00eda0;
+}
+.circle-on > span {
+            color: white;
+        }
+
+.circle-on:hover {
+            background-color: white;
+            border: 1px white solid;
+            
+}
+.circle-on:before {
+   background-color: #19942e;
+}
+
+.circle-on >span {
+                color:white;
+}
+
+.circle-off {
+        background-color: #6c757d;
+}
+.circle-off> span {
+            color: white;
+}
+
+.circle-off:hover {
+            background-color: white;
+            border: 1px #6c757d solid;
+}
+.circle-off::before {
+                background-color: #6c757d;
+}
+
+.circle-off> span {
+             color: #6c757d;
+}
+
+.circle-off input {
+        display: none;
+} 
+
+.circle-off:checked + .circle:before {
+            -webkit-transform: translateX(100px 30px );
+            -ms-transform: translateX(100px  30px);
+            transform: translateX(100px 30px);
+}
+
+
